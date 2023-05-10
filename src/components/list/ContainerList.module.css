@@ -1,0 +1,30 @@
+.ContainerList {
+  text-align: center;
+  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ContainerList .CountryBox {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.ContainerList .CountryBox div img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+.ContainerList .moreBtn {
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}/*# sourceMappingURL=ContainerList.module.css.map */
