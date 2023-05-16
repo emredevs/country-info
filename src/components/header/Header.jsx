@@ -1,9 +1,9 @@
 import React from "react";
-
+import styles from "./styles.module.css";
 export default function Header({ children }) {
   return (
-    <div>
-      <dir>logo buraya gelecek</dir>
+    <div className={styles.headerContainer}>
+      <dir>Country Viki</dir>
       {children}
     </div>
   );

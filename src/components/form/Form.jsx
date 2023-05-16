@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useContext } from "react";
 import CountryContext from "../../context/CountryContext";
+import styles from "./styles.module.css";
 export default function Form() {
   const { countryInfo, setCountryInfo, setCountry } =
     useContext(CountryContext);
@@ -24,6 +25,7 @@ export default function Form() {
       <form onSubmit={fromSubmit}>
         <label htmlFor="scroll">
           <input
+            className={styles.formInput}
             onChange={(e) => setCountryInfo(e.target.value)}
             name="scroll"
             value={countryInfo}
@@ -31,6 +33,9 @@ export default function Form() {
             type="text"
           />
         </label>
+        <button className={styles.formBtn} type="submit">
+          Search
+        </button>
       </form>
     </div>
   );

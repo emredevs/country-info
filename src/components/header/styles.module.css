@@ -1,0 +1,11 @@
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 1% 2%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}

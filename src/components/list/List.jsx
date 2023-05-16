@@ -12,8 +12,11 @@ export default function List() {
           <div>
             <img src={country.flags.png} alt="" />
           </div>
-          <div>{country.name.common}</div>
-          <div>{country.capital}</div>
+          <div className={styles.countryInfo}>
+            <div>{country.name.common}</div>
+            <div>{country.capital}</div>
+          </div>
+
           <div>
             <Link to={`/country/${country.name.common}`}>Detail</Link>
           </div>

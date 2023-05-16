@@ -1,6 +1,5 @@
 .ContainerList {
   text-align: center;
-  background-color: bisque;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,11 +10,25 @@
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  background-color: black;
 }
 .ContainerList .CountryBox div img {
   border-radius: 10px;
   width: 300px;
   height: 200px;
+  border: 2px solid white;
+}
+.ContainerList .CountryBox .countryInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+}
+.ContainerList .CountryBox .countryInfo div {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
 }
 .ContainerList .moreBtn {
   padding: 15px;
