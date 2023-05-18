@@ -69,13 +69,15 @@ export default function Detail() {
           <div>{country.timezones}</div>
         </div>
 
-        <div className={styles.detailBox}>
-          <img
-            className={styles.coatOfArms}
-            src={country.coatOfArms.png}
-            alt=""
-          />
-        </div>
+        {country.coatOfArms.svg ? (
+          <div className={styles.detailBox}>
+            <img
+              className={styles.coatOfArms}
+              src={country.coatOfArms.svg}
+              alt=""
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   );
