@@ -10,7 +10,7 @@ export default function Home() {
     axios
       .get("https://restcountries.com/v3.1/all")
       .then((res) => setCountry(res.data.slice(0, more)));
-  }, [more]);
+  }, [more, setCountry]);
   console.log(country);
   return (
     <div>
