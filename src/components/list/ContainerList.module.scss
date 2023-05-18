@@ -6,11 +6,11 @@
     align-items: center;
 
     .CountryBox {
-        border: 2px solid black;
         border-radius: 10px;
         padding: 10px;
         margin: 10px;
-        background-color: black;
+        background-color:  #292524;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
         div {
             img {
@@ -18,20 +18,38 @@
                 width: 300px;
                 height: 200px;
                 border: 2px solid white;
+                animation: slideUpAndDown 3s infinite alternate;
+                
             }
+            @keyframes slideUpAndDown {
+                0% {
+                  transform: translateY(0px);
+                }
+                50% {
+                  transform: translateY(-5px);
+                }
+                100% {
+                  transform: translateY(0px);
+                }
+              }
         }
         .countryInfo{
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            gap: 8%;
+            gap: 2%;
             
             div{
+                width: 90px;
                 background-color: white;
                 border-radius: 10px;
                 padding: 5px;
                 margin-top: 5px;
+                overflow: hidden; /* taşacak kısımları gizle. */
+                white-space: nowrap; /* alt satırı gösterme, alt satıra inme. */
+                text-overflow: ellipsis; /* uzunsa sonuna üç nokta koy. */ 
             }
+            .detail{background-color:#FFC312;}
         }
     }
 
@@ -45,5 +63,6 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
+        cursor: pointer;
     }
 }

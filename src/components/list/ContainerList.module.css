@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ContainerList {
   text-align: center;
   display: flex;
@@ -6,29 +7,48 @@
   align-items: center;
 }
 .ContainerList .CountryBox {
-  border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
-  background-color: black;
+  background-color: #292524;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .ContainerList .CountryBox div img {
   border-radius: 10px;
   width: 300px;
   height: 200px;
   border: 2px solid white;
+  animation: slideUpAndDown 3s infinite alternate;
+}
+@keyframes slideUpAndDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .ContainerList .CountryBox .countryInfo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 8%;
+  gap: 2%;
 }
 .ContainerList .CountryBox .countryInfo div {
+  width: 90px;
   background-color: white;
   border-radius: 10px;
   padding: 5px;
   margin-top: 5px;
+  overflow: hidden; /* taşacak kısımları gizle. */
+  white-space: nowrap; /* alt satırı gösterme, alt satıra inme. */
+  text-overflow: ellipsis; /* uzunsa sonuna üç nokta koy. */
+}
+.ContainerList .CountryBox .countryInfo .detail {
+  background-color: #FFC312;
 }
 .ContainerList .moreBtn {
   padding: 15px;
@@ -40,4 +60,5 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=ContainerList.module.css.map */

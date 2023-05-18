@@ -15,10 +15,9 @@ export default function List() {
           <div className={styles.countryInfo}>
             <div>{country.name.common}</div>
             <div>{country.capital}</div>
-          </div>
-
-          <div>
-            <Link to={`/country/${country.name.common}`}>Detail</Link>
+            <div className={styles.detail}>
+              <Link to={`/country/${country.name.common}`}>Detail</Link>
+            </div>
           </div>
         </div>
       ))}

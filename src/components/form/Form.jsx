@@ -15,7 +15,7 @@ export default function Form() {
       .then((res) => setCountry(res.data))
       .catch((err) => {
         console.error(err);
-        alert("Hata: Ülke bilgisi alınamadı!");
+        alert(`Hata: Ülke bilgisi alınamadı! HATALI GİRİŞ: ${countryInfo}`);
       });
     setCountryInfo("");
   };

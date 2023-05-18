@@ -1,0 +1,28 @@
+.deatilInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.coatOfArms{
+    width: 100%;
+    height: 100%;
+}
+.flags{
+    width: 500px;
+    height: 300px;
+}
+.detailBox{
+    /* text-align: left; */
+    margin-top: 5%;
+    padding: 10px;
+    height: 65vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.linkHome{
+    color: white;
+}
