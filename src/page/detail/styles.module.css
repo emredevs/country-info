@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+font-weight: bold;
 }
 
 .coatOfArms{
@@ -12,6 +12,8 @@
 .flags{
     width: 500px;
     height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 .detailBox{
     /* text-align: left; */
@@ -20,6 +22,7 @@
     height: 65vh;
     border-radius: 10px;
     overflow: hidden;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 

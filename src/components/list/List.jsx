@@ -13,8 +13,8 @@ export default function List() {
             <img src={country.flags.png} alt="" />
           </div>
           <div className={styles.countryInfo}>
-            <div>{country.name.common}</div>
-            <div>{country.capital}</div>
+            <div>Name: {country.name.common}</div>
+            <div>Capital: {country.capital}</div>
             <div className={styles.detail}>
               <Link to={`/country/${country.name.common}`}>Detail</Link>
             </div>
@@ -23,7 +23,7 @@ export default function List() {
       ))}
       <button
         className={styles.moreBtn}
-        onClick={() => setMore((prev) => prev + 8)}
+        onClick={() => setMore((prev) => prev + 6)}
       >
         More...
       </button>
