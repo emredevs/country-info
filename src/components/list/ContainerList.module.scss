@@ -1,69 +1,88 @@
 .ContainerList {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
+  .CountryBox {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    div {
+      img {
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+        border: 2px solid white;
+        animation: slideUpAndDown 3s infinite alternate;
+      }
+      @keyframes slideUpAndDown {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    }
+    .countryInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+
+      div {
+        width: 140px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 5px;
+        overflow: hidden; /* taşacak kısımları gizle. */
+        white-space: nowrap; /* alt satırı gösterme, alt satıra inme. */
+        text-overflow: ellipsis; /* uzunsa sonuna üç nokta koy. */
+      }
+      .detail {
+        background-color: #ffc312;
+      }
+    }
+  }
+
+  .moreBtn {
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) { 
+    
     .CountryBox {
-        border-radius: 10px;
-        padding: 20px;
-        margin: 10px;
-        background-color:  white;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
-
-        div {
-            img {
-                border-radius: 10px;
-                width: 300px;
-                height: 200px;
-                border: 2px solid white;
-                animation: slideUpAndDown 3s infinite alternate;
-                
-            }
-            @keyframes slideUpAndDown {
-                0% {
-                  transform: translateY(0px);
-                }
-                50% {
-                  transform: translateY(-5px);
-                }
-                100% {
-                  transform: translateY(0px);
-                }
-              }
+      width: 80%;
+      margin: 10px auto;
+      div {
+        img {
+          width: 60%; 
+          height: 40%; 
         }
-        .countryInfo{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 2%;
-            
-            div{
-                width: 140px;
-                background-color: white;
-                border-radius: 10px;
-                padding: 5px;
-                margin-top: 5px;
-                overflow: hidden; /* taşacak kısımları gizle. */
-                white-space: nowrap; /* alt satırı gösterme, alt satıra inme. */
-                text-overflow: ellipsis; /* uzunsa sonuna üç nokta koy. */ 
-            }
-            .detail{background-color:#FFC312;}
-        }
+      }
     }
 
-    .moreBtn {
-        padding: 15px;
-        border: 0;
-        outline: 0;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer;
+    .countryInfo {
+      align-items: flex-start;
     }
+  }
+
 }

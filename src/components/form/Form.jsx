@@ -22,7 +22,7 @@ export default function Form() {
 
   return (
     <div>
-      <form onSubmit={fromSubmit}>
+      <form className={styles.formCountry} onSubmit={fromSubmit}>
         <label htmlFor="scroll">
           <input
             className={styles.formInput}

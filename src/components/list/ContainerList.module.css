@@ -33,7 +33,7 @@
 }
 .ContainerList .CountryBox .countryInfo {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 2%;
 }
@@ -48,7 +48,7 @@
   text-overflow: ellipsis; /* uzunsa sonuna üç nokta koy. */
 }
 .ContainerList .CountryBox .countryInfo .detail {
-  background-color: #FFC312;
+  background-color: #ffc312;
 }
 .ContainerList .moreBtn {
   padding: 15px;
@@ -61,4 +61,17 @@
   bottom: 20px;
   right: 20px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .ContainerList .CountryBox {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .ContainerList .CountryBox div img {
+    width: 60%;
+    height: 40%;
+  }
+  .ContainerList .countryInfo {
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=ContainerList.module.css.map */

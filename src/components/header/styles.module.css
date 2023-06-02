@@ -18,3 +18,11 @@
 .linkHome {
   color: white;
 }
+@media (max-width: 768px) {
+  .headerContainer{
+    width: 80%;
+    margin: 0 auto;
+    font-size: large;
+
+  }
+}

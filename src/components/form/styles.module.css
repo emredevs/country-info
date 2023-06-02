@@ -1,20 +1,43 @@
-.formInput{
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border: 0;
-    outline: 0;
+.formCountry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
 }
-.formBtn{
-    height: 45px;
-    margin:0 0 0 5px;
-    border-radius: 10px;
+.formInput {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+.formBtn {
+  height: 45px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: large;
+  border: 0;
+  outline: 0;
+  text-align: center;
+}
+.formBtn:hover {
+  background-color: gray;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .formCountry {
+    flex-wrap: nowrap;
+  }
+  .formInput {
+    width: 150px;
+    height: 30px;
+  }
+  .formBtn {
+    width: 60px;
+    height: 30px;
     font-weight: bold;
-    font-size: large;
-    border: 0;
-    outline: 0;
-}
-.formBtn:hover{
-    background-color: gray;
-    color: white;
+    font-size: small;
+    padding: 0 auto;
+  }
 }
