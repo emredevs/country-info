@@ -20,8 +20,9 @@
 }
 @media (max-width: 768px) {
   .headerContainer{
+  
     width: 80%;
-    margin: 0 auto;
+    margin: 8px auto;
     font-size: large;
 
   }

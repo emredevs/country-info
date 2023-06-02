@@ -48,3 +48,29 @@ width: 500px;
 .linkHome{
     color: white;
 }
+
+@media (max-width: 768px) {
+
+.deatilInfo{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.detailBox{
+    width: 85%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.countryInfo{
+    flex-direction: column;
+    width: 100%;
+}
+.flags{
+    width: 100%;
+    
+}
+.coatOfArms{
+    width: 100%;
+}
+
+}
